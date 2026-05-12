@@ -1,15 +1,28 @@
-/* To learn more about Typescript configuration file: https://www.typescriptlang.org/docs/handbook/tsconfig-json.html. */
-/* To learn more about Angular compiler options: https://angular.dev/reference/configs/angular-compiler-options. */
 {
   "extends": "./tsconfig.json",
   "compilerOptions": {
     "outDir": "./out-tsc/spec",
-    "types": [
-      "vitest/globals"
-    ]
+    "rootDir": "src"
   },
   "include": [
     "src/**/*.d.ts",
-    "src/**/*.spec.ts"
+    "src/**/*.spec.ts",
+    "src/**/*.ts",
+    "src/**/*.html",
+    "src/**/*.css",
+    "src/**/*.scss",
+    "src/**/*.less",
+    "src/**/*.styl",
+    "src/**/*.json",
+    "src/**/*.svg",
+    "src/**/*.png",
+    "src/**/*.jpg",
+    "src/**/*.jpeg",
+    "src/**/*.gif",
+    "src/**/*.bmp",
+    "src/**/*.webp",
+    "src/**/*.ico",
+    "src/**/*.eot",
+    "src/**/*.ttf",
   ]
 }
