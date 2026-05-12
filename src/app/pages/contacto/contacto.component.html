@@ -1,0 +1,44 @@
+<div class="container mt-5">
+  <h2 class="text-warning mb-4">Inscripción al Evento</h2>
+  
+  <div class="row">
+    <div class="col-md-5">
+      <div class="card card-formulario p-4 shadow">
+        <form (ngSubmit)="registrar()">
+          <div class="mb-3">
+            <label>Nombre del Participante</label>
+            <input type="text" name="nombre" class="form-control" [(ngModel)]="nuevoInscrito.nombre" required>
+          </div>
+          <div class="mb-3">
+            <label>Nombre del Evento</label>
+            <input type="text" name="evento" class="form-control" [(ngModel)]="nuevoInscrito.evento" required>
+          </div>
+          <div class="mb-3">
+            <label>Correo Electrónico</label>
+            <input type="email" name="email" class="form-control" [(ngModel)]="nuevoInscrito.email" required>
+          </div>
+          <button type="submit" class="btn btn-primary w-100">Inscribirme</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="col-md-7">
+      <table class="table table-hover shadow">
+        <thead>
+          <tr>
+            <th>Nombre</th>
+            <th>Evento</th>
+            <th>Email</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let i of listaInscritos">
+            <td>{{ i.nombre }}</td>
+            <td>{{ i.evento }}</td>
+            <td>{{ i.email }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

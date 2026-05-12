@@ -1,0 +1,31 @@
+.login-container {
+    height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: radial-gradient(circle, #1a1a1a 0%, #000000 100%);
+}
+
+.card {
+    background-color: #121212;
+    border: 2px solid #ffcc00;
+    border-radius: 20px;
+}
+
+.form-control {
+    background-color: #252525;
+    border: 1px solid #444;
+    color: white;
+    padding: 12px;
+}
+
+.form-control:focus {
+    border-color: #ffcc00;
+    box-shadow: 0 0 8px rgba(255, 204, 0, 0.3);
+}
+
+h2 {
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
