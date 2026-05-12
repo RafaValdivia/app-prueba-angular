@@ -1,0 +1,22 @@
+.navbar {
+    background-color: #000;
+    border-bottom: 2px solid #ffcc00;
+    padding: 1rem 2rem;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: #ffcc00;
+    letter-spacing: 1px;
+}
+
+.nav-link {
+    color: #ffffff;
+    font-weight: 500;
+    margin-left: 15px;
+    transition: 0.3s;
+}
+
+.nav-link:hover {
+    color: #ffcc00;
+}

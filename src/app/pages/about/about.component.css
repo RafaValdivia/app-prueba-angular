@@ -1,0 +1,13 @@
+.about-header {
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), 
+                url('https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=1000&q=80');
+    background-size: cover;
+    background-position: center;
+    padding: 80px 20px;
+    border-radius: 15px;
+    border: 1px solid #333;
+}
+
+.text-warning {
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}

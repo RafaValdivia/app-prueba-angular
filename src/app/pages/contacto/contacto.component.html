@@ -1,41 +1,34 @@
 <div class="container mt-5">
   <h2 class="text-warning mb-4">Inscripción al Evento</h2>
-  
   <div class="row">
     <div class="col-md-5">
-      <div class="card card-formulario p-4 shadow">
+      <div class="card bg-dark text-white p-4 border-warning shadow">
         <form (ngSubmit)="registrar()">
           <div class="mb-3">
-            <label>Nombre del Participante</label>
-            <input type="text" name="nombre" class="form-control" [(ngModel)]="nuevoInscrito.nombre" required>
+            <label>Nombre Participante</label>
+            <input type="text" name="n" class="form-control" [(ngModel)]="nuevoInscrito.nombre" required>
           </div>
           <div class="mb-3">
             <label>Nombre del Evento</label>
-            <input type="text" name="evento" class="form-control" [(ngModel)]="nuevoInscrito.evento" required>
+            <input type="text" name="e" class="form-control" [(ngModel)]="nuevoInscrito.evento" required>
           </div>
           <div class="mb-3">
             <label>Correo Electrónico</label>
-            <input type="email" name="email" class="form-control" [(ngModel)]="nuevoInscrito.email" required>
+            <input type="email" name="m" class="form-control" [(ngModel)]="nuevoInscrito.email" required>
           </div>
-          <button type="submit" class="btn btn-primary w-100">Inscribirme</button>
+          <button type="submit" class="btn btn-warning w-100 fw-bold">Registrar Inscripción</button>
         </form>
       </div>
     </div>
-
     <div class="col-md-7">
-      <table class="table table-hover shadow">
-        <thead>
-          <tr>
-            <th>Nombre</th>
-            <th>Evento</th>
-            <th>Email</th>
-          </tr>
+      <h4 class="text-white-50">Lista de Inscritos</h4>
+      <table class="table table-dark table-hover mt-3">
+        <thead class="table-warning">
+          <tr><th>Nombre</th><th>Evento</th><th>Email</th></tr>
         </thead>
         <tbody>
           <tr *ngFor="let i of listaInscritos">
-            <td>{{ i.nombre }}</td>
-            <td>{{ i.evento }}</td>
-            <td>{{ i.email }}</td>
+            <td>{{i.nombre}}</td><td>{{i.evento}}</td><td>{{i.email}}</td>
           </tr>
         </tbody>
       </table>

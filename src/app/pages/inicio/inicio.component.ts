@@ -11,7 +11,6 @@ import { Router } from '@angular/router';
   styleUrl: './inicio.component.css'
 })
 export class InicioComponent {
-  // Datos del formulario
   usuario: string = '';
   clave: string = '';
   errorLogin: boolean = false;
@@ -19,11 +18,10 @@ export class InicioComponent {
   constructor(private router: Router) {}
 
   onLogin() {
-    // Validación simple para la evaluación
+    // Validación según pauta
     if (this.usuario === 'admin' && this.clave === '1234') {
       this.errorLogin = false;
-      // Redirige a la página de inscripción de eventos
-      this.router.navigate(['/contacto']);
+      this.router.navigate(['/contacto']); // Redirige a inscripción
     } else {
       this.errorLogin = true;
     }
