@@ -1,0 +1,23 @@
+<div class="login-container">
+  <div class="col-md-4">
+    <div class="card shadow-lg p-4 text-center">
+      <h2 class="text-warning mb-4">Acceso Participantes</h2>
+      <p class="text-white-50 small mb-4">Ingresa para gestionar tus inscripciones</p>
+      
+      <form (ngSubmit)="onLogin()">
+        <div class="mb-3">
+          <input type="text" name="usuario" class="form-control" placeholder="Usuario" [(ngModel)]="usuario" required>
+        </div>
+        <div class="mb-3">
+          <input type="password" name="clave" class="form-control" placeholder="Contraseña" [(ngModel)]="clave" required>
+        </div>
+
+        <div *ngIf="errorLogin" class="alert alert-danger p-2 small">
+          Credenciales incorrectas. Intenta con admin/1234.
+        </div>
+
+        <button type="submit" class="btn btn-primary w-100 mt-2">Entrar al Sistema</button>
+      </form>
+    </div>
+  </div>
+</div>
